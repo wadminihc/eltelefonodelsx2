@@ -1,2 +1,0 @@
-# eltelefonodelsx
-web de eltelefonodelsx
