@@ -19,73 +19,119 @@
             margin: 0;
         }
 
-        /* Media Queries: Tablet Landscape */
-        @media screen and (max-width: 1060px) {
-            #primary { width:67%; }
-            #secondary { width:30%; margin-left:3%;}  
-        }
-
-        /* Media Queries: Tabled Portrait */
-        @media screen and (max-width: 768px) {
-            #primary { width:100%; }
-            #secondary { width:100%; margin:0; border:none; }
-        }
-
         .bg {
             background-image: url("chica1.jpg");
         }
 
-        .banner {
-            background: rgba(0, 0, 0, 0.9);
-            display: flex;
-            flex-direction: column;
+
+        @media only screen and (max-width: 768px) {
+            .banner {
+                background: rgba(0, 0, 0, 0.9);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .banner__content {
+                padding: 0.5%;
+                max-width: 100%;
+                margin: 0 auto;
+                align-items: center;
+            }
+
+            .banner__text {
+                flex-grow: 1;
+                line-height: 1.75;
+                color: rgba(255, 255, 255, 1);
+                font-size: 7vw;
+                font-family: sans-serif;
+            }
+
+            .banner2 {
+                width: 45%;
+                background: rgba(255, 255, 255, 1);
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                outline-color: rgba(0, 0, 0, 1);
+                outline-width: thin;
+                outline-style: solid;
+                text-align: center;
+            }
+
+            .banner2__text {
+                padding: 3%;
+                font-family: sans-serif;
+                margin: 0;
+            }
+
+            .banner2__text2 {
+                line-height: 1.5;
+                font-size: 5vw;
+                font-family: sans-serif;
+            }
+
+            hr {
+                height: 0.1vw;
+                width: 20%;
+                background-color: rgba(0, 0, 0, 1);
+                display: block;
+            }
         }
 
-        .banner__content {
-            padding: 0.5%;
-            max-width: 100%;
-            margin: 0 auto;
-            align-items: center;
-        }
+        @media only screen and (min-width: 768px) {
+            .banner {
+                background: rgba(0, 0, 0, 0.9);
+                display: flex;
+                flex-direction: column;
+            }
 
-        .banner__text {
-            flex-grow: 1;
-            line-height: 1.75;
-            color: rgba(255, 255, 255, 1);
-            font-size: 4vw;
-            font-family: sans-serif;
-        }
+            .banner__content {
+                padding: 0.5%;
+                max-width: 100%;
+                margin: 0 auto;
+                align-items: center;
+            }
 
-        .banner2 {
-            width: 45%;
-            background: rgba(255, 255, 255, 1);
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            outline-color: rgba(0, 0, 0, 1);
-            outline-width: thin;
-            outline-style: solid;
-            text-align: center;
-        }
+            .banner__text {
+                flex-grow: 1;
+                line-height: 1.75;
+                color: rgba(255, 255, 255, 1);
+                font-size: 4vw;
+                font-family: sans-serif;
+            }
 
-        .banner2__text {
-            padding: 3%;
-            font-family: sans-serif;
-            margin: 0;
-        }
+            .banner2 {
+                width: 45%;
+                background: rgba(255, 255, 255, 1);
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                outline-color: rgba(0, 0, 0, 1);
+                outline-width: thin;
+                outline-style: solid;
+                text-align: center;
+            }
 
-        .banner2__text2 {
-            line-height: 1.5;
-            font-size: 5vw;
-            font-family: sans-serif;
-        }
+            .banner2__text {
+                padding: 3%;
+                font-family: sans-serif;
+                margin: 0;
+            }
 
-        hr {
-            height: 0.1vw;
-            width: 20%;
-            background-color: rgba(0, 0, 0, 1);
-            display: block;
+            .banner2__text2 {
+                line-height: 1.5;
+                font-size: 5vw;
+                font-family: sans-serif;
+            }
+
+            hr {
+                height: 0.1vw;
+                width: 20%;
+                background-color: rgba(0, 0, 0, 1);
+                display: block;
+            }
         }
     </style>
 </head>
