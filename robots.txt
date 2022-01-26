@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aciertatarot.com/sitemap.xml
+Sitemap: https://polvo803.com/sitemap.xml
